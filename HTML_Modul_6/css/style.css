@@ -298,6 +298,56 @@
 .list-menu:hover:before{
     border: 3px solid #0c3256;
 }
+.no-before:hover:before{
+    border: hidden;
+}
+.checkbox {
+    width: 11px;
+    height: 11px;
+}
+.checkbox + label {
+    cursor: pointer;
+}
+.checkbox:not(checked) {
+    position: absolute;
+    opacity: 0;
+}
+.checkbox:not(checked) + label {
+    position: relative;
+    padding: 0 0 0 20px;
+}
+
+.checkbox:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 11px;
+    height: 11px;
+    background: white;
+    border-top: 1px solid #1c4360;
+    border-left: 1px solid #1c4360;
+    border-right: 1px solid #1c4360;
+    border-bottom: 1px solid #809aad;
+    box-shadow: inset 3px 3px 2px rgba(0,0,0,.4);
+}
+.checkbox:checked + label:before {
+    background: #383c5b;
+}
+.choose{
+    width: 82px;
+    height: 26px;
+    background: linear-gradient(to top, #0c3357, #236988);
+    border: hidden;
+    border-radius: 13px;
+    font-family: Arial, "Lucida Sans Unicode";
+    color: white;
+    font-size: 11px;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+.choose:hover{
+    background: linear-gradient(to top, #236988, #0c3357);
+}
 .list-menu:nth-child(5n+1):hover{
     color: #114165;
     font-size: 12px;
