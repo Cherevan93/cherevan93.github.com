@@ -4,6 +4,28 @@
     height: 200px;
 
 }
+.top-header{
+    position: relative;
+}
+.header-text-logo{
+    position: absolute;
+    font-family: Lucida Sans Unicode, Arial;
+    top: 135px;
+    left: 3px;
+    font-size: 31px;
+    color: #cececd;
+}
+.header-text-logo span{
+    font-size: 53px;
+}
+.header-text-logo-two{
+    position: absolute;
+    font-family: Lucida Sans Unicode, Arial;
+    color: #b91200;
+    font-size: 26px;
+    top: 188px;
+    left: 67px;
+}
 .number:before{
     position: absolute;
     content: "";
